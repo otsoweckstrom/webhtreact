@@ -18,8 +18,8 @@ class SignUp extends Component {
   };
   render() {
     return (
-      <div className="container">
-        <form onSubmit={this.handleSubmit} className="white">
+      <div className="container ">
+        <form onSubmit={this.handleSubmit} className="purple">
           <h5 className="grey-text">Sign Up</h5>
           <div className="input-field">
             <label htmlFor="email">Email</label>
@@ -38,7 +38,7 @@ class SignUp extends Component {
             <input type="text" id="lastname" onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <button className="purple  lighten-2 z-depth-0">Register</button>
+            <button className="purple lighten-2 z-depth-1">Register</button>
           </div>
         </form>
       </div>

@@ -3,16 +3,27 @@ import { Link } from "react-router-dom";
 import SignedInLinks from "./SignedInLinks";
 import SignedOutLinks from "./SignedOutLinks";
 import "./Navbar.css";
+import Searchbar from "../layout/Searchbar";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
         <Link to="/" className="logo">
-          Huutis
+          Brainstorm
         </Link>
-        <SignedInLinks />
-        <SignedOutLinks />
+
+        <ul className="left">
+          <li></li>
+        </ul>
+        <ul className="right">
+          <li>
+            <SignedOutLinks />
+          </li>
+          <li>
+            <SignedInLinks />
+          </li>
+        </ul>
       </div>
     </nav>
   );
